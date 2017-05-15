@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<center>
+<title>Program 1: Ray Tracing</title>
+</center>
+<script type="text/javascript" src="drawstuff.js"></script>
+</head>
+
+<h2 style="text-align:center"><i> CSC 561 <br> Program: Ray Tracing <br>Amit Rao</i></h2>
+
+<p><b>Program: Blinn - Phong Illumination</b>
+<button onclick="main()">Run</button></p>
+
+<form>
+<p><b>Extra Credit: Arbitrarily sized images and viewports</b>
+  <br>Enter Dimensions<br>
+Width: <input type="text" id="w" value="" >
+Height: <input type="text" id="h" value="" >
+<input style="font-size:150%" type="button" value="Render" onclick="NewCanvas()"><br></p>
+</form>
+
+<p><b>Extra Credit: Shadows</b><br>
+  Light Location <br>
+  x: <input type="text" style="width:40px" id="x" value="" > y: <input type="text" style="width:40px" id="y" value="" > z: <input type="text" style="width:40px" id="z" value="" >
+<button onclick="shadows()">On</button>
+<button onclick="no_shadows()">Off</button></p>
+
+<canvas id="viewport" width=0 height=0></canvas>
+
+
+<body style="background-color: aliceblue" >
+</body>
+</html>
